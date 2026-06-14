@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "94f79e2c-7c0d-434e-bec1-ca0a197bccca",
+    "Name": "UsrConcerts",
+    "Type": 1,
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/UsrConcerts.csproj",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+*
+!UsrConcerts/
+!UsrConcerts/**
+!.gitignore
+
+.vs
+Release
+Debug
+obj
+[Bb]in
