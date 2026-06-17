@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Страница записи Концерты" />
+			<Item Name="LocalizableStrings.addRecord_0847j6p_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.addRecord_qqkegpy_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.addRecord_yqx286p_caption.Value" Value="Добавить" />
+			<Item Name="Parameters.b7b0c17a-dd6f-d4e8-8d1f-3996853afa63.Caption" Value="Активный" />
+		</Items>
+	</Group>
+</Resources>
