@@ -4,6 +4,7 @@
     "Name": "UsrPerformancesRelatedPage",
     "ModifiedOnUtc": "\/Date(1781866472000)\/",
     "ManagerName": "AddonSchemaManager",
-    "Caption": "Выступления (Настройка страницы)"
+    "Caption": "Выступления (Настройка страницы)",
+    "DependsOn": []
   }
 }

@@ -4,6 +4,7 @@
     "Name": "UsrConcertsBusinessRule",
     "ModifiedOnUtc": "\/Date(1781782400000)\/",
     "ManagerName": "AddonSchemaManager",
-    "Caption": "Концерты (Бизнес правила)"
+    "Caption": "Концерты (Бизнес правила)",
+    "DependsOn": []
   }
 }

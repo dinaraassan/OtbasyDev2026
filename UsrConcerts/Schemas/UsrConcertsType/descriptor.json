@@ -8,6 +8,7 @@
       "Name": "BaseLookup"
     },
     "ManagerName": "EntitySchemaManager",
-    "Caption": "Тип Концерта"
+    "Caption": "Тип Концерта",
+    "DependsOn": []
   }
 }
