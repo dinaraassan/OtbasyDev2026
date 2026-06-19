@@ -3,6 +3,13 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Концерты form page" />
+			<Item Name="LocalizableStrings.ExpansionPanel_qx3wijo_title.Value" Value="Выступления" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_27igy01_caption.Value" Value="Добавить" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_wrr1dj9_caption.Value" Value="Экспорт в Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_iqob5di_caption.Value" Value="Импорт данных" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_szjv3hd_caption.Value" Value="Обновить" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_mh5mgbw_placeholder.Value" Value="Поиск" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_bv3oiuw_caption.Value" Value="Действия" />
 			<Item Name="LocalizableStrings.addRecord_0847j6p_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_qqkegpy_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_yqx286p_caption.Value" Value="Добавить" />

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="AddonConfig.Rules.4a6b869b-d6f7-db70-e40d-db7847dd8753.Caption" Value="Установить статический фильтр: Ответственный" />
+			<Item Name="Caption" Value="Концерты (Бизнес правила)" />
+		</Items>
+	</Group>
+</Resources>

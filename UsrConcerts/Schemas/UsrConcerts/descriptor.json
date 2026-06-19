@@ -2,13 +2,12 @@
   "Descriptor": {
     "UId": "cf696732-228e-444f-9dd5-48a364557369",
     "Name": "UsrConcerts",
-    "ModifiedOnUtc": "\/Date(1781712521000)\/",
+    "ModifiedOnUtc": "\/Date(1781782399000)\/",
     "Parent": {
       "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
       "Name": "BaseEntity"
     },
     "ManagerName": "EntitySchemaManager",
-    "Caption": "Концерты",
-    "DependsOn": []
+    "Caption": "Концерты"
   }
 }

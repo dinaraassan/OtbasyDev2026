@@ -58,7 +58,21 @@ define("UsrConcerts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 							"dataValueType": 12,
 							"width": 131
 						}
-					]
+					],
+					"features": {
+						"rows": {
+							"selection": {
+								"enable": true,
+								"multiple": true
+							}
+						},
+						"editable": {
+							"enable": false,
+							"itemsCreation": false,
+							"floatingEditPanel": false
+						}
+					},
+					"visible": true
 				}
 			},
 			{
@@ -126,7 +140,7 @@ define("UsrConcerts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 				"values": {
 					"default": [
 						{
-							"direction": "asc",
+							"direction": "desc",
 							"columnName": "UsrCode"
 						}
 					]

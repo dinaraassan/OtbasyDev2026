@@ -3,7 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Тип Концерта" />
-			<Item Name="EventsProcessSchema.Caption" Value="Бизнес-процесс" />
+			<Item Name="Columns.UsrSortingOrder.Caption" Value="Порядок сортировки" />
 		</Items>
 	</Group>
 </Resources>

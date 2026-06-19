@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "3b9eb47e-268e-4702-8d9e-1071190ac248",
+    "Name": "UsrPerformances",
+    "ModifiedOnUtc": "\/Date(1781871812000)\/",
+    "Parent": {
+      "UId": "1bab9dcf-17d5-49f8-9536-8e0064f1dce0",
+      "Name": "BaseEntity"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Выступления"
+  }
+}

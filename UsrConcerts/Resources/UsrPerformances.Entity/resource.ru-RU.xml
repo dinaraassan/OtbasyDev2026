@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="Выступления" />
+			<Item Name="Columns.UsrDurationMinutes.Caption" Value="Продолжительность, минут" />
+			<Item Name="Columns.UsrName.Caption" Value="Название" />
+			<Item Name="Columns.UsrNumber.Caption" Value="Номер" />
+			<Item Name="Columns.UsrParentConcert.Caption" Value="Родительский концерт" />
+			<Item Name="Columns.UsrPerformanceType.Caption" Value="Тип выступления" />
+		</Items>
+	</Group>
+</Resources>

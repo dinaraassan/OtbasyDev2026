@@ -1,0 +1,13 @@
+﻿{
+  "Descriptor": {
+    "UId": "101838a6-1c9a-44b9-82b1-033d8f588323",
+    "Name": "UsrPerformanceType",
+    "ModifiedOnUtc": "\/Date(1781867072000)\/",
+    "Parent": {
+      "UId": "11ab4bcb-9b23-4b6d-9c86-520fae925d75",
+      "Name": "BaseLookup"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Тип Выступления"
+  }
+}
