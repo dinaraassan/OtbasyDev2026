@@ -754,7 +754,15 @@ define("UsrConcerts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 				"operation": "merge",
 				"path": [],
 				"values": {
-					"primaryDataSourceName": "PDS"
+					"primaryDataSourceName": "PDS",
+					"dependencies": {
+						"GridDetail_18dv0k7DS": [
+							{
+								"attributePath": "UsrParentConcert",
+								"relationPath": "PDS.Id"
+							}
+						]
+					}
 				}
 			},
 			{

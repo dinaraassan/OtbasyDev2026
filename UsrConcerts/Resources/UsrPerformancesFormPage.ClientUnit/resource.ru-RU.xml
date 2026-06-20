@@ -3,6 +3,8 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Страница записи выступления" />
+			<Item Name="LocalizableStrings.DurationMustBePositive.Value" Value="Допустимая продолжительность выступлений должна превышать 0." />
+			<Item Name="LocalizableStrings.MaxTotalDurationExceeded.Value" Value="Допустимая общая продолжительность выступлений не должна превышать {0}." />
 			<Item Name="LocalizableStrings.addRecord_g3pdlxx_caption.Value" Value="Добавить" />
 		</Items>
 	</Group>
