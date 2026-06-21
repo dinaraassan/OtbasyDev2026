@@ -1,4 +1,4 @@
-define("UsrConcerts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/()/**SCHEMA_ARGS*/ {
+define("UsrConcerts_FormPage", /**SCHEMA_DEPS*/["@creatio-devkit/common"]/**SCHEMA_DEPS*/, function/**SCHEMA_ARGS*/(sdk)/**SCHEMA_ARGS*/ {
 	return {
 		viewConfigDiff: /**SCHEMA_VIEW_CONFIG_DIFF*/[
 			{
@@ -66,6 +66,19 @@ define("UsrConcerts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 			},
 			{
 				"operation": "merge",
+				"name": "CardToggleTabPanel",
+				"values": {
+					"styleType": "default",
+					"bodyBackgroundColor": "primary-contrast-500",
+					"selectedTabTitleColor": "auto",
+					"tabTitleColor": "auto",
+					"underlineSelectedTabColor": "auto",
+					"headerBackgroundColor": "auto",
+					"allowToggleClose": true
+				}
+			},
+			{
+				"operation": "merge",
 				"name": "Feed",
 				"values": {
 					"dataSourceName": "PDS",
@@ -86,6 +99,41 @@ define("UsrConcerts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 						}
 					]
 				}
+			},
+			{
+				"operation": "insert",
+				"name": "ActionButton",
+				"values": {
+					"type": "crt.Button",
+					"caption": "#ResourceString(ActionButton_caption)#",
+					"color": "default",
+					"disabled": false,
+					"size": "medium",
+					"iconPosition": "left-icon",
+					"visible": true,
+					"menuItems": [],
+					"clickMode": "menu",
+					"icon": "actions-button-icon"
+				},
+				"parentName": "CardToggleContainer",
+				"propertyName": "items",
+				"index": 0
+			},
+			{
+				"operation": "insert",
+				"name": "RunTotalDurationWebServiceMenuItem",
+				"values": {
+					"type": "crt.MenuItem",
+					"caption": "#ResourceString(RunTotalDurationWebServiceMenuItem_caption)#",
+					"visible": true,
+					"clicked": {
+						"request": "usr.RunWebServiceRequest"
+					},
+					"icon": "process-button-icon"
+				},
+				"parentName": "ActionButton",
+				"propertyName": "menuItems",
+				"index": 0
 			},
 			{
 				"operation": "insert",
@@ -802,7 +850,40 @@ define("UsrConcerts_FormPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 				}
 			}
 		]/**SCHEMA_MODEL_CONFIG_DIFF*/,
-		handlers: /**SCHEMA_HANDLERS*/[]/**SCHEMA_HANDLERS*/,
+		handlers: /**SCHEMA_HANDLERS*/[
+			{
+				request: "usr.RunWebServiceRequest",
+				/* Implementation of the custom query handler. */
+				handler: async (request, next) => {
+					console.log("Run web service button works...");
+
+					// get 
+					const concertCode = await request.$context.PDS_UsrCode_oyb3ea3;
+
+					/* Create an instance of the HTTP client from @creatio-devkit/common. */
+					const httpClientService = new sdk.HttpClientService();
+
+					/* Specify the URL to run web service method. */
+					const baseUrl = Terrasoft.utils.uri.getConfigurationWebServiceBaseUrl();
+					const transferName = "rest";
+					const serviceName = "ConcertsService";
+					const methodName = "GetTotalDurationByConcertCode";
+					const endpoint = Terrasoft.combinePath(baseUrl, transferName, serviceName, methodName);
+					//const endpoint = "http://localhost/D1_Studio/0/rest/ConcertsService/GetTotalDurationByConcertCode";
+					/* Send a POST HTTP request. The HTTP client converts the response body from JSON to a JS object automatically. */
+					var params = {
+						concertCode: concertCode
+					};
+					const response = await httpClientService.post(endpoint, params);
+					
+					console.log("response total duration = " + response.body.GetTotalDurationByConcertCodeResult);
+					
+					/* Call the next handler if it exists and return its result. */
+					return next?.handle(request);
+				}
+			}
+
+		]/**SCHEMA_HANDLERS*/,
 		converters: /**SCHEMA_CONVERTERS*/{}/**SCHEMA_CONVERTERS*/,
 		validators: /**SCHEMA_VALIDATORS*/{}/**SCHEMA_VALIDATORS*/
 	};
