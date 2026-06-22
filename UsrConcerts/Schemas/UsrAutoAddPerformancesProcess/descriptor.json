@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "d7961fce-da20-4645-8b2e-715272284c09",
+    "Name": "UsrAutoAddPerformancesProcess",
+    "ModifiedOnUtc": "\/Date(1782132712000)\/",
+    "ManagerName": "ProcessSchemaManager",
+    "Caption": "Автоматическое создание выступлении для концерта",
+    "DependsOn": []
+  }
+}

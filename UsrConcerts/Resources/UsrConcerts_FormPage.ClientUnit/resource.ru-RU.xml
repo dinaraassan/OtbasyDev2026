@@ -11,6 +11,7 @@
 			<Item Name="LocalizableStrings.GridDetailRefreshBtn_szjv3hd_caption.Value" Value="Обновить" />
 			<Item Name="LocalizableStrings.GridDetailSearchFilter_mh5mgbw_placeholder.Value" Value="Поиск" />
 			<Item Name="LocalizableStrings.GridDetailSettingsBtn_bv3oiuw_caption.Value" Value="Действия" />
+			<Item Name="LocalizableStrings.RunProcessAutoAddPerformancesMenuItem_caption.Value" Value="Запуск процесса создания 10 выступлении" />
 			<Item Name="LocalizableStrings.RunTotalDurationWebServiceMenuItem_caption.Value" Value="Вызов сервиса расчета TotalDuration" />
 			<Item Name="LocalizableStrings.addRecord_0847j6p_caption.Value" Value="Добавить" />
 			<Item Name="LocalizableStrings.addRecord_qqkegpy_caption.Value" Value="Добавить" />
