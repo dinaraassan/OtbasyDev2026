@@ -67,12 +67,13 @@ define("UsrConcerts_ListPage", /**SCHEMA_DEPS*/[]/**SCHEMA_DEPS*/, function/**SC
 							}
 						},
 						"editable": {
-							"enable": false,
-							"itemsCreation": false,
-							"floatingEditPanel": false
+							"enable": true,
+							"itemsCreation": true,
+							"floatingEditPanel": true
 						}
 					},
-					"visible": true
+					"visible": true,
+					"style": "plain-white"
 				}
 			},
 			{
